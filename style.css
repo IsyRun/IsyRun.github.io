@@ -1,0 +1,51 @@
+:root {
+  --bg: #F4F7F2;
+  --card: #FFFFFF;
+  --text: #1F2A1C;
+  --muted: #5B6B56;
+  --accent: #3F7D4E;
+  --line: #D5DFCF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1C211E;
+    --card: #252B27;
+    --text: #E4EAE5;
+    --muted: #A9B5AD;
+    --accent: #7CC08F;
+    --line: #3B453F;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+p, li { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+a { color: var(--accent); }
+.lead { color: var(--muted); font-size: 1.05rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 20px 0;
+}
+.card h2 { margin-top: 0; }
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
